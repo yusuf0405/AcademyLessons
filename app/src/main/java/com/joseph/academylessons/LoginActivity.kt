@@ -22,7 +22,7 @@ class LoginActivity : AppCompatActivity() {
 
             when {
                 loginText.isEmpty() -> {
-                    showToast("Заполните поле ввода для логина")
+                    showToast(getString(R.string.fill_in_the_login_input_field))
                 }
 
                 !loginText.contains("@gmail.com") -> {
